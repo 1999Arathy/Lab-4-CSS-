@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>table</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+	<script src="https://kit.fontawesome.com/91011c3d1d.js"></script>
+ 
+	<style>
+		table,th,td{
+			border:1px solid blanchedalmond;
+			border-collapse:collapse;
+
+		}
+		td,th{
+			padding:4px;
+
+		}
+		table{
+			width:95%;
+			margin:50px auto 30px;
+		}
+
+		.section-1{
+			border:1px hidden ;
+			width:31%;
+			padding:5px;
+			display:inline-block;
+			margin-left: 18px;			
+		}
+		.section-2{
+			border:1px hidden ;
+			width:40%;
+			display: inline-block;			
+		}
+		.section-3{
+			border:1px none ;
+			width:25%;
+			padding:10px;
+			display: inline-block;
+		}
+
+		.foot{
+			margin-left:18px;
+			display:inline-block;
+			width:470px;
+			margin-top:10px;
+		}
+		.glyphicon{
+			color: red;
+		}
+		.fa-solid{
+			color:darkorange;
+		}
+		.fa-eye{
+			color:blue;
+		}
+		.row{
+			border:5px solid black;
+			width:900px;
+			height: 100%;
+			margin:auto;
+			padding:50px;
+			margin-top: 140px;
+		}
+		input[type="text"]{
+			width:170px;
+			display:inline-block;
+		}
+		.pagination a{
+			color:black;
+			padding:4px;
+			display:inline-block;
+			text-decoration:none;
+			background-color:white;
+			border-radius:50%;
+
+		}
+		.pagination a.active{
+			background-color:lightskyblue;
+			
+		}
+		.pagination a:hover:not(.active){
+			background-color:#eee;
+		}
+		.fa-caret-up{
+			display:inline-block;
+
+
+		}
+		.fa-caret-down{
+			display:block;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="section-1">
+		Show <select name="show">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option selected>5</option>
+		</select> entries
+	</div>
+
+	<div class="section-2">
+		<h2>Customer <strong>Details</strong></h2>
+	</div>
+
+	<div class="section-3">
+		<form>
+			<input type="text" name="search" placeholder="search">
+		</form>
+	</div>
+
+	<br>
+	<div class="tb">
+		<table>
+			<tr>
+				<th style="width:auto">#</th>
+				<th>Name</th>
+				<th>Address</th>
+				<th>City</th>
+				<th>Pincode</th>
+				<th>Country</th>
+				<th>Actions</th>
+			</tr>
+			<tr>
+				<td style="width:auto">1</td>
+				<td>Thomas Hardy</td>
+				<td>89 Chiarsco Rd</td>
+				<td>Portland</td>
+				<td>91219</td>
+				<td>USA</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa-solid fa-pen"></i>
+					<i class="glyphicon glyphicon-trash"></i>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:auto">2</td>
+				<td>Maria Anders</td>
+				<td>Obere Str.57</td>
+				<td>Berlin</td>
+				<td>12209</td>
+				<td>Germany</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa-solid fa-pen"></i>
+					<i class="glyphicon glyphicon-trash"></i>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:auto">3</td>
+				<td>Fran Wilson</td>
+				<td>C/Araquil,67</td>
+				<td>Madrid</td>
+				<td>28023</td>
+				<td>Spain</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa-solid fa-pen"></i>
+					<i class="glyphicon glyphicon-trash"></i>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:auto">4</td>
+				<td>Dominic Perrier</td>
+				<td>25,rue Lauriston</td>
+				<td>Paris</td>
+				<td>75016</td>
+				<td>France</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa-solid fa-pen"></i>
+					<i class="glyphicon glyphicon-trash"></i>
+				</td>
+			</tr>
+			<tr>
+				<td style="width:auto">5</td>
+				<td>Martin Blank</td>
+				<td>Via Monteblanco 34</td>
+				<td>Tutin</td>
+				<td>10100</td>
+				<td>Italy</td>
+				<td><i class="fa fa-eye"></i>
+					<i class="fa-solid fa-pen"></i>
+					<i class="glyphicon glyphicon-trash"></i>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="foot">
+		<p>Showing <strong>5</strong> out of <strong>25</strong> entries</p>
+	</div>
+	<div class="pagination">
+		<a href="#">Previous</a>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#" class="active">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a href="#">6</a>
+		<a href="#">7</a>
+		<a href="#">8</a>
+		<a href="#">9</a>
+		<a href="#">Next</a>
+	</div>
+
+
+	</div>
+</body>
+</html>
